@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/snake-style.css" />
+
+  <!-- JQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- MDL Resources -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body>
+<script src="js/snake-animations.js"></script>
+  <div class="container-fluid splashscreen">
+    <div class="row">
+      <div class="col-xs-1">
+      </div>
+      <div class="col-xs-3 text-right" >
+        <h1 class="title">Snake<span>JS</span></h1>
+      </div>
+
+      <div class="col-xs-7 text-center splash-right">
+        <p>
+          A modern take on the classic snake game. To get started select one of the game modes below!
+        </p>
+        <button id="classic" class="mdl-button mdl-js-button mdl-button--raised">
+          Play Classic
+        </button>
+        <button id="arcade" class="mdl-button mdl-js-button mdl-button--raised btn-right">
+          Play Arcade
+        </button>
+      </div>
+      <div class="col-xs-1"></div>
+    </div>
+  </div>
+
+  <div class="content"> <!-- Content Area -->
+
+      <div class="row">
+        <div class="col-xs-4 no-padding">
+          <div class="info-box text-center">
+            <div class="button-holder">
+              <button id="back" class="mdl-button mdl-js-button mdl-button--fab"> <!-- data-toggle="tooltip" data-placement="bottom" title="Change Mode"> -->
+                <i class="material-icons">arrow_upward</i>
+              </button>
+            </div>
+            <div class="info-holder">
+              <h1 class="timer"><span id="minutes">--</span>:<span id="seconds">--</span></h1>
+              <h3>High Score: <span id="high_score"></span></h3>
+              <h3>Score: <span id="score">0</span></h3>
+            </div>
+            <div class="msg-holder">
+              <p id="instructions">
+                <span></span>
+              </p>
+              <p style="margin:0">
+                 Use arrow keys to navigate, and press spacebar to pause.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 no-padding" style="cursor:none">
+          <div class="game-box text-center">
+            <div id="game-data">
+              <h1></h1>
+              <h4></h4>
+            </div>
+            <canvas id="canvas" width="600px" height="600px"></canvas>
+          </div>
+        </div>
+      </div>
+
+
+  </div> <!-- END: Content Area -->
+
+  <!-- <div class="contentArea">
+    <div class="gameArea">
+      <canvas id="canvas" width="600" height="600"></canvas>
+      <div id="msgBox">
+        <h1></h1>
+        <h4></h4>
+      </div>
+    </div>
+    <div class="infoArea">
+      <div class="infoBox">
+
+        <h1>Snake JS</h1>
+
+        <h1 class="timer"><span id="minutes">--</span>:<span id="seconds">--</span></h1>
+        <h3>High Score: <span id="high_score"></span></h3>
+        <h3>Score: <span id="score">0</span></h3>
+        <button id="play" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="You can also press Spacebar to pause & resume gameplay!" onclick="this.blur();">Play Game</button>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Game Logic Script -->
+  <script src="js/snake-gameLogic.js"></script>
+</body>
+
+</html>

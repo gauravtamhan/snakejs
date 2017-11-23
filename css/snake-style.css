@@ -1,0 +1,251 @@
+/*
+ * Stylesheet for Snake JS
+ */
+
+
+
+html,
+body {
+  /*font-family: Consolas, Monaco, monospace !important;*/
+  height: 100%;
+  background-color: black;
+}
+
+.title {
+  margin-top: 4rem;
+  color: #fff;
+  /*text-shadow: 3px 3px 6px rgba(0,0,0,0.2);*/
+}
+
+.title span {
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .title {
+    font-size: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .title {
+    font-size: 3.4rem;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  .title {
+    font-size: 3.6rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .title {
+    font-size: 3.8rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .title {
+    font-size: 4.25rem;
+  }
+}
+
+@media only screen and (min-width: 810px) {
+  .title {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .title {
+    font-size: 4.75rem;
+  }
+}
+
+@media only screen and (min-width: 870px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title{
+    font-size: 3rem;
+  }
+}
+
+.splashscreen {
+  padding-top: 20%;
+  /*background: linear-gradient(135deg, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* sexy blue */
+}
+
+.splash-right {
+  border-left: 4px solid white;
+  height: 300px;
+  padding: 40px 20px;
+}
+
+.splash-right p {
+  color: white;
+  font-size: 1.8rem;
+  line-height: 34px;
+  margin-bottom: 50px;
+}
+
+.btn-right {
+  margin-left: 5% !important;
+}
+
+.mdl-button--raised {
+  background-color: white !important;
+  font-weight: 600 !important;
+}
+
+.mdl-button--fab {
+  color: white !important;
+}
+
+.btn:focus {
+  outline: none !important;
+}
+
+.content {
+  background-color: #EFF1F3;
+  display: none;
+}
+
+.game-box {
+  background-color: #444;
+}
+
+canvas {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 997;
+  box-shadow: 0 1px 16px 4px rgba(0,0,0,0.2);
+}
+
+#game-data {
+  width: 600px;
+  height: 600px;
+  background-color: #333;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  box-shadow: 0 1px 16px 4px rgba(0,0,0,0.2);
+  margin: 0 auto;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.button-holder {
+  padding-top: 60px;
+}
+
+.info-holder {
+  margin-top: 20%;
+}
+
+.row {
+  margin: 0;
+}
+
+.msg-holder {
+  width: 80%;
+  margin: 12% auto 0;
+  background: #dee1e2;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+}
+
+.msg-holder p {
+  font-size: 16px;
+}
+
+.msg-holder span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#game-data h1 {
+  color: white;
+  margin: 0;
+  padding-top: 36%;
+}
+
+#game-data h4 {
+  color: white;
+  margin: 0;
+  padding-top: 4%;
+}
+
+.timer {
+  margin-bottom: 10%;
+}
+
+#high_score {
+  color: cornflowerblue;
+}
+
+
+
+/*.contentArea {
+  padding-top: 3%;
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+}
+
+.gameArea {
+  float: right;
+}
+
+.infoArea {
+  float: left;
+  width: 400px;
+  height: 600px;
+}
+
+.infoBox {
+  margin: 30% 0;
+  margin-left: 20%;
+}
+
+.infoBox h1:not(.timer) {
+  font-size: 2.6em;
+  margin-bottom: 40px;
+}
+
+#play {
+  margin-top: 40px;
+}
+
+#msgBox {
+  margin-top: 3%;
+  width: 600px;
+  height: 600px;
+  position: fixed;
+  top: 0;
+  right: 5%;
+  text-align: center;
+  cursor: none;
+}*/
